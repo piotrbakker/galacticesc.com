@@ -23,8 +23,6 @@ h1 {
   font-family: "galaxy",sans-serif;
   color: $color-yellow;
 	font-size: 40px;
-	//line-height: 48px;
-	//margin: 24px 0px 24px 0px;
   text-shadow: -5px 5px 15px rgba(0,0,0,0.50);
   @media screen and (max-width: 640px) {
     font-size: 24px;
@@ -88,8 +86,8 @@ html, body {
     padding: 0 8px 0 8px;
   }
   @media screen and (max-width: 768px) {
-		margin-left: 16px;
-		margin-right: 16px;
+		margin-left: 32px;
+		margin-right: 32px;
   }
 }
 
@@ -163,7 +161,7 @@ html, body {
   to {
     margin-right: 0%;
     width: 100%;
-    opacity: 1; // Needs to be here twice in order for animation-fill-mode: forwards; to work
+    opacity: 1; // Needs to be here twice in order for animation-fill-mode: forwards; to work — otherwise the Download button is visible before it animates.
   }
 }
 
@@ -184,5 +182,5 @@ html, body {
 // Sound
 
 audio { 
-   display:none;
+   display: none; //Otherwise audio controls show on the page
 }

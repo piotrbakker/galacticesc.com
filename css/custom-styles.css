@@ -59,8 +59,8 @@ html, body {
       padding: 0 8px 0 8px; } }
   @media screen and (max-width: 768px) {
     .container {
-      margin-left: 16px;
-      margin-right: 16px; } }
+      margin-left: 32px;
+      margin-right: 32px; } }
 
 .background-dark {
   background: #2C2C2C; }
