@@ -18,20 +18,18 @@ $color-yellow: #F8E71C;
 
 // Typography
 
+
 @font-face {
-  font-family: "galaxy";
-  src:url("type/galaxy.eot");
-  src:url("type/galaxy.eot?#iefix") format("embedded-opentype"),
-    url("fonts/galaxy.woff") format("woff"),
-    url("fonts/galaxy.ttf") format("truetype"),
-    url("fonts/galaxy.svg#galaxy") format("svg");
+  font-family: galaxy;
+  src:url("../assets/type/galaxy.eot");
+  src:url("../assets/type/galaxy.eot?#iefix") format("embedded-opentype"), url("../assets/type/galaxy.woff") format("woff"), url("../assets/type/galaxy.ttf") format("truetype"), url("../assets/type/galaxy.svg#galaxy") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 h1 {
   @include all-text;
-  font-family: "galaxy", sans-serif;
+  font-family: galaxy, sans-serif;
   color: $color-yellow;
 	font-size: 40px;
   text-shadow: -5px 5px 15px rgba(0,0,0,0.50);
