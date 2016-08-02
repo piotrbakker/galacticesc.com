@@ -201,7 +201,7 @@ html, body {
   50% { opacity: 0.0; }
 }
 .blink-wrapper:hover .blink {
-  -webkit-animation-play-state: paused;
+  -webkit-animation-play-state: paused; //Allows for the blinking to pause on hover
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
   animation-play-state: paused;
@@ -213,10 +213,10 @@ audio {
    display: none; //Otherwise audio controls show on the page
 }
 
-//Starfield
+// Starfield
 
 .star-haze {
-  box-shadow: 0px 2px 30px 0px #FFFFFF; //Not working
+  //box-shadow: 0px 2px 30px 0px #FFFFFF; //Not working as intended at the moment
 }
 
 #stars {
