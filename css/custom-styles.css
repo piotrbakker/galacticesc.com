@@ -73,21 +73,6 @@ html, body {
   align-items: center;
 }
 
-.container-landing {
-  padding: 0 128px 0 128px;
-}
-@media screen and (max-width: 970px) {
-  .container-landing {
-    padding: 0 8px 0 8px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container-landing {
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-}
-
 #stars-1 {
   width: 1px;
   height: 1px;

@@ -94,16 +94,6 @@ html, body {
   display: flex;
   align-items: center;
 }
-.container-landing {
-  padding: 0 128px 0 128px;
-  @media screen and (max-width: 970px) {
-    padding: 0 8px 0 8px;
-  }
-  @media screen and (max-width: 768px) {
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-}
 
 // Background
 #stars-1 {
