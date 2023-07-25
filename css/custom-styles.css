@@ -151,7 +151,7 @@ html, body {
   background: #222222;
 }
 
-@keyframes slidein-top {
+@keyframes slide-down {
   from {
     margin-top: -100%;
     width: 100%;
@@ -161,7 +161,7 @@ html, body {
     width: 100%;
   }
 }
-@keyframes slidein-right {
+@keyframes slide-right {
   from {
     margin-right: 200%;
     width: 300%;
@@ -188,10 +188,10 @@ html, body {
 }
 .splash-game-name-animation {
   margin: 0 0 40px 0;
-  -webkit-animation-name: slidein-top;
-  -moz-animation-name: slidein-top;
-  -o-animation-name: slidein-top;
-  animation-name: slidein-top;
+  -webkit-animation-name: slide-down;
+  -moz-animation-name: slide-down;
+  -o-animation-name: slide-down;
+  animation-name: slide-down;
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   -o-animation-duration: 2s;
@@ -204,10 +204,10 @@ html, body {
 
 .download-cta-animation {
   opacity: 0;
-  -webkit-animation-name: slidein-right;
-  -moz-animation-name: slidein-right;
-  -o-animation-name: slidein-right;
-  animation-name: slidein-right;
+  -webkit-animation-name: slide-right;
+  -moz-animation-name: slide-right;
+  -o-animation-name: slide-right;
+  animation-name: slide-right;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -o-animation-duration: 1s;
