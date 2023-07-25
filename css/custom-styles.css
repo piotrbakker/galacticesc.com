@@ -1,5 +1,4 @@
 /* Colours: */
-/* Mixins */
 @font-face {
   font-family: galaxy;
   src: url("../assets/type/galaxy.eot");
@@ -88,95 +87,6 @@ html, body {
   }
 }
 
-.background-dark {
-  background: #222222;
-}
-
-.splash-game-name-animation {
-  margin: 0 0 40px 0;
-  -webkit-animation-name: slidein-top;
-  -moz-animation-name: slidein-top;
-  -o-animation-name: slidein-top;
-  animation-name: slidein-top;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: 1s linear;
-  -moz-animation-timing-function: 1s linear;
-  -o-animation-timing-function: 1s linear;
-  animation-timing-function: 1s linear;
-}
-
-@keyframes slidein-top {
-  from {
-    margin-top: -100%;
-    width: 100%;
-  }
-  to {
-    margin-top: 0%;
-    width: 100%;
-  }
-}
-.download-cta-animation {
-  opacity: 0;
-  -webkit-animation-name: slidein-right;
-  -moz-animation-name: slidein-right;
-  -o-animation-name: slidein-right;
-  animation-name: slidein-right;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  -moz-animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  -o-animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-@keyframes slidein-right {
-  from {
-    margin-right: 200%;
-    width: 300%;
-    opacity: 1;
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-    opacity: 1;
-  }
-}
-.blink {
-  -webkit-animation: blink 1.5s linear infinite;
-  -moz-animation: blink 1.5s linear infinite;
-  -o-animation: blink 1.5s linear infinite;
-  animation: blink 1.5s linear infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-.blink-wrapper:hover .blink {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-audio {
-  display: none;
-}
-
 #stars-1 {
   width: 1px;
   height: 1px;
@@ -237,6 +147,37 @@ audio {
   opacity: 0.8;
 }
 
+.background-dark {
+  background: #222222;
+}
+
+@keyframes slidein-top {
+  from {
+    margin-top: -100%;
+    width: 100%;
+  }
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein-right {
+  from {
+    margin-right: 200%;
+    width: 300%;
+    opacity: 1;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 @keyframes star-stream {
   from {
     transform: translateX(0px);
@@ -244,6 +185,63 @@ audio {
   to {
     transform: translateX(-2000px);
   }
+}
+.splash-game-name-animation {
+  margin: 0 0 40px 0;
+  -webkit-animation-name: slidein-top;
+  -moz-animation-name: slidein-top;
+  -o-animation-name: slidein-top;
+  animation-name: slidein-top;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: 1s linear;
+  -moz-animation-timing-function: 1s linear;
+  -o-animation-timing-function: 1s linear;
+  animation-timing-function: 1s linear;
+}
+
+.download-cta-animation {
+  opacity: 0;
+  -webkit-animation-name: slidein-right;
+  -moz-animation-name: slidein-right;
+  -o-animation-name: slidein-right;
+  animation-name: slidein-right;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -moz-animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-timing-function: 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.blink {
+  -webkit-animation: blink 1.5s linear infinite;
+  -moz-animation: blink 1.5s linear infinite;
+  -o-animation: blink 1.5s linear infinite;
+  animation: blink 1.5s linear infinite;
+}
+
+.blink-wrapper:hover .blink {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+audio {
+  display: none;
 }
 
 /*# sourceMappingURL=custom-styles.css.map */
