@@ -165,7 +165,7 @@ html, body {
   from {
     margin-right: 200%;
     width: 300%;
-    opacity: 1;
+    opacity: 0;
   }
   to {
     margin-right: 0%;

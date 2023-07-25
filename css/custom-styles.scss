@@ -170,7 +170,6 @@ html, body {
     margin-top: -100%;
     width: 100%;
   }
-
   to {
     margin-top: 0%;
     width: 100%;
@@ -180,13 +179,12 @@ html, body {
   from {
     margin-right: 200%;
     width: 300%;
-    opacity: 1;
+		opacity: 0;
   }
-
   to {
     margin-right: 0%;
     width: 100%;
-    opacity: 1; // Needs to be here twice in order for animation-fill-mode: forwards; to work — otherwise the Download button is visible before it animates.
+    opacity: 1;
   }
 }
 @keyframes blink {
