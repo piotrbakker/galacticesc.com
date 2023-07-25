@@ -34,39 +34,38 @@ $duration-2000: 2000ms;
   font-weight: normal;
   font-style: normal;
 }
-h1 {
+.text-system {
   @include shared-text;
   @include system;
   color: $color-yellow;
-  font-size: 40px;
-  margin-top: 40px;
-  text-shadow: -5px 5px 15px rgba(0,0,0,0.50);
+  font-size: 2.5rem;
+  text-shadow: -8px 8px 16px rgba(0,0,0,0.50);
   @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-  a {
-    color: $color-yellow;
-    text-decoration: none;
-    &:hover {
-    	transition: 0.3s ease;
-      color: $color-yellow;
-      text-decoration: none;
-    }
-    a:visited {
-      color: $color-yellow;
-      text-decoration: none;
-    }
-    a:active {
-      color: $color-yellow;
-      text-decoration: none;
-    }
-    a:link {
-      color: $color-yellow;
-      text-decoration: none;
-    }
+    font-size: 1.5rem;
   }
 }
-p {
+.text-linked {
+  color: $color-yellow;
+  text-decoration: none;
+  &:hover {
+    transition: 0.3s ease;
+    color: $color-yellow;
+    text-decoration: none;
+  }
+  a:visited {
+    color: $color-yellow;
+    text-decoration: none;
+  }
+  a:active {
+    color: $color-yellow;
+    text-decoration: none;
+  }
+  a:link {
+    color: $color-yellow;
+    text-decoration: none;
+  }
+}
+.text-normal {
   @include shared-text;
   @include sans-serif;
   color: $color-grey-30;
@@ -75,7 +74,7 @@ p {
   a {
   	color: inherit;
     text-decoration: none;
-  	&:hover{
+  	&:hover {
   		transition: 0.3s ease;
       color: $color-grey-05;
       text-decoration: underline;
