@@ -95,7 +95,7 @@ html, body {
   display: flex;
   align-items: center;
 }
-.container { // The 12 column layout is too wide and this makes it a bit more narrow.
+.container-landing {
   padding: 0 128px 0 128px;
   @media screen and (max-width: 970px) {
     padding: 0 8px 0 8px;
