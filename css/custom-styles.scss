@@ -16,6 +16,12 @@ $color-star-yellow: #F5EFA4;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
+@mixin sans-serif {
+	font-family: 'Dosis', sans-serif;
+}
+@mixin system {
+	font-family: galaxy, sans-serif;
+}
 
 // Typography
 
@@ -29,7 +35,7 @@ $color-star-yellow: #F5EFA4;
 
 h1 {
   @include shared-text;
-  font-family: galaxy, sans-serif;
+	@include system;
   color: $color-yellow;
 	font-size: 40px;
   text-shadow: -5px 5px 15px rgba(0,0,0,0.50);
@@ -61,7 +67,7 @@ h1 {
 
 p {
 	@include shared-text;
-  font-family: 'Dosis', sans-serif;
+  @include sans-serif;
   color: $color-grey-30;
 	font-size: 18px;
 	font-weight: 400;
