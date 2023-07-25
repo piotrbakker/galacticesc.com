@@ -12,7 +12,7 @@ $color-yellow: #F8E71C;
 $color-star-yellow: #F5EFA4;
 
 /* Mixins */
-@mixin all-text {
+@mixin shared-text {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
@@ -28,7 +28,7 @@ $color-star-yellow: #F5EFA4;
 }
 
 h1 {
-  @include all-text;
+  @include shared-text;
   font-family: galaxy, sans-serif;
   color: $color-yellow;
 	font-size: 40px;
@@ -60,7 +60,7 @@ h1 {
 }
 
 p {
-	@include all-text;
+	@include shared-text;
   font-family: 'Dosis', sans-serif;
   color: $color-grey-30;
 	font-size: 18px;
