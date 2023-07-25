@@ -10,6 +10,9 @@ $color-blue: #4A90E2;
 $color-red: #D0021B;
 $color-yellow: #F8E71C;
 $color-star-yellow: #F5EFA4;
+$duration-1000: 1000ms;
+$duration-1600: 1600ms;
+$duration-2000: 2000ms;
 
 // Mixins
 @mixin shared-text {
@@ -36,6 +39,7 @@ h1 {
 	@include system;
   color: $color-yellow;
 	font-size: 40px;
+  margin-top: 40px;
   text-shadow: -5px 5px 15px rgba(0,0,0,0.50);
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -200,73 +204,64 @@ html, body {
 }
 
 // Animation
-.splash-game-name-animation {
-  margin: 0 0 40px 0;
-
-  //Name
-  -webkit-animation-name: slide-down;
+.motion-span-1000 {
+	-webkit-animation-duration: $duration-1000;
+  -moz-animation-duration: $duration-1000;
+  -o-animation-duration: $duration-1000;
+  animation-duration: $duration-1000;
+}
+.motion-span-2000 {
+	-webkit-animation-duration: $duration-2000;
+	-moz-animation-duration: $duration-2000;
+	-o-animation-duration: $duration-2000;
+	animation-duration: $duration-2000;
+}
+.motion-type-slide-down {
+	-webkit-animation-name: slide-down;
   -moz-animation-name: slide-down;
   -o-animation-name: slide-down;
   animation-name: slide-down;
-
-  //Duration
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-
-  //Timing
-  -webkit-animation-timing-function: 1s linear;
-  -moz-animation-timing-function: 1s linear;
-  -o-animation-timing-function: 1s linear;
-  animation-timing-function: 1s linear;
-
+  -webkit-animation-timing-function: $duration-1000 linear;
+  -moz-animation-timing-function: $duration-1000 linear;
+  -o-animation-timing-function: $duration-1000 linear;
+  animation-timing-function: $duration-1000 linear;
 }
-.download-cta-animation {
+.motion-type-slide-right {
   opacity: 0;
-
-  //Name
   -webkit-animation-name: slide-right;
   -moz-animation-name: slide-right;
   -o-animation-name: slide-right;
   animation-name: slide-right;
-
-  //Duration
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-
-  //Fill-mode
-  -webkit-animation-fill-mode: forwards; //Neccessary for the opacity to remain at 1 after the slide-right animation
+	// Neccessary for the opacity to remain at 1 after the slide-right animation
+  -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-
-  //Timing
-  -webkit-animation-timing-function: 2s cubic-bezier(.17,.67,.83,.67);
-  -moz-animation-timing-function: 2s cubic-bezier(.17,.67,.83,.67);
-  -o-animation-timing-function: 2s cubic-bezier(.17,.67,.83,.67);
-  animation-timing-function: 2s cubic-bezier(.17,.67,.83,.67);
-
-  //Delay
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s;
-
+  -webkit-animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
+  -moz-animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
+  -o-animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
+  animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
+  -webkit-animation-delay: $duration-2000;
+  -moz-animation-delay: $duration-2000;
+  -o-animation-delay: $duration-2000;
+  animation-delay: $duration-2000;
 }
-.blink {
-  -webkit-animation: blink 1.5s linear infinite;
-  -moz-animation: blink 1.5s linear infinite;
-  -o-animation: blink 1.5s linear infinite;
-  animation: blink 1.5s linear infinite;
+
+// Effects
+.effect-blink {
+  -webkit-animation: blink $duration-1600 linear infinite;
+  -moz-animation: blink $duration-1600 linear infinite;
+  -o-animation: blink $duration-1600 linear infinite;
+  animation: blink $duration-1600 linear infinite;
 }
-.blink-wrapper:hover .blink {
-  -webkit-animation-play-state: paused; //Allows for the blinking to pause on hover
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
+.effect-blink-wrapper {
+	&:hover .effect-blink {
+		// Allows for the blinking to pause on hover
+	 -webkit-animation-play-state: paused;
+	 -moz-animation-play-state: paused;
+	 -o-animation-play-state: paused;
+	 animation-play-state: paused;
+	}
 }
 
 // Sound
