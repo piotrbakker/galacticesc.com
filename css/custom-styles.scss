@@ -16,14 +16,14 @@ $duration-2000: 2000ms;
 
 // Mixins
 @mixin shared-text {
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 @mixin sans-serif {
-	font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 @mixin system {
-	font-family: galaxy, sans-serif;
+  font-family: galaxy, sans-serif;
 }
 
 // Typography
@@ -36,42 +36,42 @@ $duration-2000: 2000ms;
 }
 h1 {
   @include shared-text;
-	@include system;
+  @include system;
   color: $color-yellow;
-	font-size: 40px;
+  font-size: 40px;
   margin-top: 40px;
   text-shadow: -5px 5px 15px rgba(0,0,0,0.50);
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
   a {
-  	color: $color-yellow;
+    color: $color-yellow;
     text-decoration: none;
-  	&:hover {
-  		transition: 0.3s ease;
+    &:hover {
+    	transition: 0.3s ease;
       color: $color-yellow;
       text-decoration: none;
-  	}
-  	a:visited {
+    }
+    a:visited {
       color: $color-yellow;
       text-decoration: none;
-  	}
-  	a:active {
+    }
+    a:active {
       color: $color-yellow;
       text-decoration: none;
-  	}
-  	a:link {
+    }
+    a:link {
       color: $color-yellow;
       text-decoration: none;
-  	}
+    }
   }
 }
 p {
-	@include shared-text;
+  @include shared-text;
   @include sans-serif;
   color: $color-grey-30;
-	font-size: 18px;
-	font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
   a {
   	color: inherit;
     text-decoration: none;
@@ -101,8 +101,8 @@ html, body {
     padding: 0 8px 0 8px;
   }
   @media screen and (max-width: 768px) {
-		margin-left: 32px;
-		margin-right: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 
@@ -165,7 +165,7 @@ html, body {
   //box-shadow: 0px 2px 30px 0px #FFFFFF; //Not working as intended at the moment
 }
 .background-dark {
-	background: $color-grey-90;
+  background: $color-grey-90;
 }
 
 // Keyframes
@@ -183,7 +183,7 @@ html, body {
   from {
     margin-right: 200%;
     width: 300%;
-		opacity: 0;
+  opacity: 0;
   }
   to {
     margin-right: 0%;
@@ -205,19 +205,19 @@ html, body {
 
 // Animation
 .motion-span-1000 {
-	-webkit-animation-duration: $duration-1000;
+  -webkit-animation-duration: $duration-1000;
   -moz-animation-duration: $duration-1000;
   -o-animation-duration: $duration-1000;
   animation-duration: $duration-1000;
 }
 .motion-span-2000 {
-	-webkit-animation-duration: $duration-2000;
-	-moz-animation-duration: $duration-2000;
-	-o-animation-duration: $duration-2000;
-	animation-duration: $duration-2000;
+  -webkit-animation-duration: $duration-2000;
+  -moz-animation-duration: $duration-2000;
+  -o-animation-duration: $duration-2000;
+  animation-duration: $duration-2000;
 }
 .motion-type-slide-down {
-	-webkit-animation-name: slide-down;
+  -webkit-animation-name: slide-down;
   -moz-animation-name: slide-down;
   -o-animation-name: slide-down;
   animation-name: slide-down;
@@ -232,7 +232,7 @@ html, body {
   -moz-animation-name: slide-right;
   -o-animation-name: slide-right;
   animation-name: slide-right;
-	// Neccessary for the opacity to remain at 1 after the slide-right animation
+  // Neccessary for the opacity to remain at 1 after the slide-right animation
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
@@ -255,13 +255,13 @@ html, body {
   animation: blink $duration-1600 linear infinite;
 }
 .effect-blink-wrapper {
-	&:hover .effect-blink {
-		// Allows for the blinking to pause on hover
-	 -webkit-animation-play-state: paused;
-	 -moz-animation-play-state: paused;
-	 -o-animation-play-state: paused;
-	 animation-play-state: paused;
-	}
+  &:hover .effect-blink {
+  // Allows for the blinking to pause on hover
+   -webkit-animation-play-state: paused;
+   -moz-animation-play-state: paused;
+   -o-animation-play-state: paused;
+   animation-play-state: paused;
+  }
 }
 
 // Sound
