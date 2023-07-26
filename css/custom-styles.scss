@@ -162,11 +162,11 @@ html, body {
     width: 100%;
   }
 }
-@keyframes slide-right {
+@keyframes slide-left {
   from {
     margin-right: 200%;
     width: 300%;
-  opacity: 0;
+    opacity: 0;
   }
   to {
     margin-right: 0%;
@@ -175,7 +175,9 @@ html, body {
   }
 }
 @keyframes blink {
-  50% { opacity: 0.0; }
+  50% {
+    opacity: 0.0;
+  }
 }
 @keyframes star-stream {
   from {
@@ -204,26 +206,30 @@ html, body {
   -moz-animation-name: slide-down;
   -o-animation-name: slide-down;
   animation-name: slide-down;
+
   -webkit-animation-timing-function: $duration-1000 linear;
   -moz-animation-timing-function: $duration-1000 linear;
   -o-animation-timing-function: $duration-1000 linear;
   animation-timing-function: $duration-1000 linear;
 }
-.motion-type-slide-right {
+.motion-type-slide-left {
   opacity: 0;
-  -webkit-animation-name: slide-right;
-  -moz-animation-name: slide-right;
-  -o-animation-name: slide-right;
-  animation-name: slide-right;
-  // Neccessary for the opacity to remain at 1 after the slide-right animation
+
+  -webkit-animation-name: slide-left;
+  -moz-animation-name: slide-left;
+  -o-animation-name: slide-left;
+  animation-name: slide-left;
+
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+
   -webkit-animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
   -moz-animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
   -o-animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
   animation-timing-function: $duration-2000 cubic-bezier(.17,.67,.83,.67);
+
   -webkit-animation-delay: $duration-2000;
   -moz-animation-delay: $duration-2000;
   -o-animation-delay: $duration-2000;

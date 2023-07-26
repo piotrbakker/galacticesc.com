@@ -133,10 +133,6 @@ html, body {
   opacity: 0.8;
 }
 
-.background-dark {
-  background: #222222;
-}
-
 @keyframes slide-down {
   from {
     margin-top: -100%;
@@ -147,7 +143,7 @@ html, body {
     width: 100%;
   }
 }
-@keyframes slide-right {
+@keyframes slide-left {
   from {
     margin-right: 200%;
     width: 300%;
@@ -197,12 +193,12 @@ html, body {
   animation-timing-function: 1000ms linear;
 }
 
-.motion-type-slide-right {
+.motion-type-slide-left {
   opacity: 0;
-  -webkit-animation-name: slide-right;
-  -moz-animation-name: slide-right;
-  -o-animation-name: slide-right;
-  animation-name: slide-right;
+  -webkit-animation-name: slide-left;
+  -moz-animation-name: slide-left;
+  -o-animation-name: slide-left;
+  animation-name: slide-left;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
