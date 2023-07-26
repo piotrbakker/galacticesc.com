@@ -41,26 +41,30 @@ $duration-2000: 2000ms;
   font-size: 2.5rem;
   text-shadow: -8px 8px 16px rgba(0,0,0,0.50);
   @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
-.text-linked {
+.text-system-linked {
   color: $color-yellow;
   text-decoration: none;
   &:hover {
-    transition: 0.3s ease;
+    // transition: 0.3s ease;
+    color: $color-yellow;
+    text-decoration: none;
+    -webkit-animation: blink $duration-1600 linear infinite;
+    -moz-animation: blink $duration-1600 linear infinite;
+    -o-animation: blink $duration-1600 linear infinite;
+    animation: blink $duration-1600 linear infinite;
+  }
+  &:visited {
     color: $color-yellow;
     text-decoration: none;
   }
-  a:visited {
+  &:active {
     color: $color-yellow;
     text-decoration: none;
   }
-  a:active {
-    color: $color-yellow;
-    text-decoration: none;
-  }
-  a:link {
+  &:link {
     color: $color-yellow;
     text-decoration: none;
   }
@@ -69,16 +73,17 @@ $duration-2000: 2000ms;
   @include shared-text;
   @include sans-serif;
   color: $color-grey-30;
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: 400;
-  a {
-  	color: inherit;
-    text-decoration: none;
-  	&:hover {
-  		transition: 0.3s ease;
-      color: $color-grey-05;
-      text-decoration: underline;
-  	}
+}
+
+// Lists
+.list-system-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-top: 1.5rem;
   }
 }
 
@@ -176,7 +181,7 @@ html, body {
 }
 @keyframes blink {
   50% {
-    opacity: 0.0;
+    opacity: 0.4;
   }
 }
 @keyframes star-stream {

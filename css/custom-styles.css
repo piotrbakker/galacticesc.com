@@ -16,28 +16,31 @@
 }
 @media screen and (max-width: 768px) {
   .text-system {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
-.text-linked {
+.text-system-linked {
   color: #F8E71C;
   text-decoration: none;
 }
-.text-linked:hover {
-  transition: 0.3s ease;
+.text-system-linked:hover {
+  color: #F8E71C;
+  text-decoration: none;
+  -webkit-animation: blink 1600ms linear infinite;
+  -moz-animation: blink 1600ms linear infinite;
+  -o-animation: blink 1600ms linear infinite;
+  animation: blink 1600ms linear infinite;
+}
+.text-system-linked:visited {
   color: #F8E71C;
   text-decoration: none;
 }
-.text-linked a:visited {
+.text-system-linked:active {
   color: #F8E71C;
   text-decoration: none;
 }
-.text-linked a:active {
-  color: #F8E71C;
-  text-decoration: none;
-}
-.text-linked a:link {
+.text-system-linked:link {
   color: #F8E71C;
   text-decoration: none;
 }
@@ -47,17 +50,17 @@
   text-rendering: optimizeLegibility;
   font-family: "Dosis", sans-serif;
   color: #ACACAC;
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
-.text-normal a {
-  color: inherit;
-  text-decoration: none;
+
+.list-system-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.text-normal a:hover {
-  transition: 0.3s ease;
-  color: #F4F4F4;
-  text-decoration: underline;
+.list-system-nav li {
+  margin-top: 1.5rem;
 }
 
 html, body {
@@ -157,7 +160,7 @@ html, body {
 }
 @keyframes blink {
   50% {
-    opacity: 0;
+    opacity: 0.4;
   }
 }
 @keyframes star-stream {
