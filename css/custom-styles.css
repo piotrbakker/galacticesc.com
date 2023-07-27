@@ -10,9 +10,8 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: galaxy, sans-serif;
-  color: #F8E71C;
   font-size: 2.5rem;
-  text-shadow: -8px 8px 16px rgba(0, 0, 0, 0.5);
+  text-shadow: -0.5rem 0.5rem 1rem #00000050;
 }
 @media screen and (max-width: 768px) {
   .text-system {
@@ -45,6 +44,20 @@
   text-decoration: none;
 }
 
+.heading-normal {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: galaxy, sans-serif;
+  color: #F4F4F4;
+  font-size: 3.5rem;
+  text-shadow: -0.5rem 0.5rem 1rem #00000050;
+}
+@media screen and (max-width: 768px) {
+  .heading-normal {
+    font-size: 2rem;
+  }
+}
+
 .text-normal {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -74,6 +87,14 @@ html, body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.container-top {
+  z-index: 1;
+}
+
+.content-screenshot {
+  box-shadow: 0 0 4rem #00000050;
 }
 
 #stars-1 {

@@ -13,6 +13,12 @@ $color-star-yellow: #F5EFA4;
 $duration-1000: 1000ms;
 $duration-1600: 1600ms;
 $duration-2000: 2000ms;
+$shadow-gray-1: #00000090;
+$shadow-gray-2: #00000050;
+$shadow-blur-1: 1rem;
+$shadow-blur-2: 4rem;
+$box-shadow-1: -0.5rem 0.5rem $shadow-blur-1 $shadow-gray-2;
+$box-shadow-2: 0 0 $shadow-blur-2 $shadow-gray-2;
 
 // Mixins
 @mixin shared-text {
@@ -22,7 +28,7 @@ $duration-2000: 2000ms;
 @mixin sans-serif {
   font-family: 'Dosis', sans-serif;
 }
-@mixin system {
+@mixin modular {
   font-family: galaxy, sans-serif;
 }
 
@@ -36,10 +42,9 @@ $duration-2000: 2000ms;
 }
 .text-system {
   @include shared-text;
-  @include system;
-  color: $color-yellow;
+  @include modular;
   font-size: 2.5rem;
-  text-shadow: -8px 8px 16px rgba(0,0,0,0.50);
+  text-shadow: $box-shadow-1;
   @media screen and (max-width: 768px) {
     font-size: 1.25rem;
   }
@@ -67,6 +72,16 @@ $duration-2000: 2000ms;
   &:link {
     color: $color-yellow;
     text-decoration: none;
+  }
+}
+.heading-normal {
+  @include shared-text;
+  @include modular;
+  color: $color-grey-05;
+  font-size: 3.5rem;
+  text-shadow: $box-shadow-1;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
   }
 }
 .text-normal {
@@ -98,6 +113,14 @@ html, body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+.container-top {
+  z-index: 1;
+}
+
+// Content
+.content-screenshot {
+  box-shadow: $box-shadow-2;
 }
 
 // Background
