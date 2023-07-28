@@ -33,47 +33,54 @@
     </div>
     <div class="container-centered">
       <div class="container container-top">
-        <div class="row justify-content-center">
-          <div class="col text-center">
-            <h1 class="heading-normal">Gallery<h1>
+        <main>
+          <div class="row justify-content-center">
+            <div class="col text-center">
+              <h1 class="heading-normal">Gallery<h1>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-1.png" onclick="openModalWindow(this)">
+          <div class="row justify-content-center mt-4">
+            <div class="col-4">
+              <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-1.png" onclick="openModalWindow(this)">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-2.png" onclick="openModalWindow(this)">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-3.png" onclick="openModalWindow(this)">
+            </div>
           </div>
-          <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-2.png" onclick="openModalWindow(this)">
+          <div class="row justify-content-center mt-4">
+            <div class="col-4">
+              <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-4.png" onclick="openModalWindow(this)">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-5.png" onclick="openModalWindow(this)">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-6.png" onclick="openModalWindow(this)">
+            </div>
           </div>
-          <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-3.png" onclick="openModalWindow(this)">
+          <div id="modal-window">
+            <div class="container-centered">
+              <span id="modal-window-close" onclick="closeModalWindow()">&times;</span>
+              <img class="rounded-3 content-screenshot" id="modal-window-content">
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-4.png" onclick="openModalWindow(this)">
+        </main>
+        <nav>
+          <div class="row mt-4">
+            <div class="col text-center">
+              <ul class="mt-5 list-system-nav">
+                <li class="text-system">
+                  <a href="/" class="text-system text-system-linked">Back</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-5.png" onclick="openModalWindow(this)">
-          </div>
-          <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-6.png" onclick="openModalWindow(this)">
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col text-center">
-              <a href="/" class="text-system text-system-linked">< Back</a>
-          </div>
-        </div>
+        </nav>
       </div>
     </div>
-    <div id="modal-window">
-      <div class="container-centered">
-        <span id="modal-window-close" onclick="closeModalWindow()">&times;</span>
-        <img class="rounded-3 content-screenshot" id="modal-window-content">
-      </div>
-    </div>
-
     <script>
       function openModalWindow(imgElement) {
         var modalWindow = document.getElementById("modal-window");
@@ -91,6 +98,5 @@
         modalWindow.style.display = "none";
       }
     </script>
-
   </body>
 </html>
