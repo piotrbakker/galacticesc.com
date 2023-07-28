@@ -53,13 +53,9 @@ $box-shadow-2: 0 0 $shadow-blur-2 $shadow-gray-2;
   color: $color-yellow;
   text-decoration: none;
   &:hover {
-    // transition: 0.3s ease;
+    transition: 0.3s ease;
     color: $color-yellow;
     text-decoration: none;
-    -webkit-animation: blink $duration-1600 linear infinite;
-    -moz-animation: blink $duration-1600 linear infinite;
-    -o-animation: blink $duration-1600 linear infinite;
-    animation: blink $duration-1600 linear infinite;
   }
   &:visited {
     color: $color-yellow;

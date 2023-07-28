@@ -24,12 +24,9 @@
   text-decoration: none;
 }
 .text-system-linked:hover {
+  transition: 0.3s ease;
   color: #F8E71C;
   text-decoration: none;
-  -webkit-animation: blink 1600ms linear infinite;
-  -moz-animation: blink 1600ms linear infinite;
-  -o-animation: blink 1600ms linear infinite;
-  animation: blink 1600ms linear infinite;
 }
 .text-system-linked:visited {
   color: #F8E71C;
