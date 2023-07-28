@@ -96,6 +96,41 @@ html, body {
 .content-screenshot {
   box-shadow: 0 0 4rem #00000050;
 }
+.content-screenshot:hover {
+  cursor: pointer;
+}
+
+#modal-window {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modal-window-close {
+  color: #F8E71C;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#modal-window-close:hover {
+  opacity: 0.8;
+}
+
+#modal-window-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
 
 #stars-1 {
   width: 1px;
