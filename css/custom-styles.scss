@@ -301,15 +301,6 @@ html, body {
   -o-animation: blink $duration-1600 linear infinite;
   animation: blink $duration-1600 linear infinite;
 }
-.effect-blink-wrapper {
-  &:hover .effect-blink {
-  // Allows for the blinking to pause on hover
-   -webkit-animation-play-state: paused;
-   -moz-animation-play-state: paused;
-   -o-animation-play-state: paused;
-   animation-play-state: paused;
-  }
-}
 
 // Sound
 audio {

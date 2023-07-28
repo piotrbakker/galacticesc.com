@@ -276,13 +276,6 @@ html, body {
   animation: blink 1600ms linear infinite;
 }
 
-.effect-blink-wrapper:hover .effect-blink {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
 audio {
   display: none;
 }
