@@ -40,24 +40,24 @@
         </div>
         <div class="row justify-content-center mt-4">
           <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-1.png">
+            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-1.png" onclick="openModalWindow(this)">
           </div>
           <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-2.png">
+            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-2.png" onclick="openModalWindow(this)">
           </div>
           <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-3.png">
+            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-3.png" onclick="openModalWindow(this)">
           </div>
         </div>
         <div class="row justify-content-center mt-4">
           <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-4.png">
+            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-4.png" onclick="openModalWindow(this)">
           </div>
           <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-5.png">
+            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-5.png" onclick="openModalWindow(this)">
           </div>
           <div class="col-4">
-            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-6.png">
+            <img class="img-fluid rounded-3 content-screenshot" alt="" src="assets/img/content-game-screenshot-6.png" onclick="openModalWindow(this)">
           </div>
         </div>
         <div class="row mt-4">
@@ -67,5 +67,30 @@
         </div>
       </div>
     </div>
+    <div id="modal-window">
+      <div class="container-centered">
+        <span id="modal-window-close" onclick="closeModalWindow()">&times;</span>
+        <img class="rounded-3 content-screenshot" id="modal-window-content">
+      </div>
+    </div>
+
+    <script>
+      function openModalWindow(imgElement) {
+        var modalWindow = document.getElementById("modal-window");
+        var modalWindowContent = document.getElementById("modal-window-content");
+
+        // Show the modal and set the enlarged image
+        modalWindow.style.display = "block";
+        modalWindowContent.src = imgElement.src;
+      }
+
+      function closeModalWindow() {
+        var modalWindow = document.getElementById("modal-window");
+
+        // Close the modal
+        modalWindow.style.display = "none";
+      }
+    </script>
+
   </body>
 </html>
