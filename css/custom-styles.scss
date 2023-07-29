@@ -58,6 +58,7 @@ $box-shadow-yellow: 0 0 $shadow-blur-2 $shadow-yellow;
     transition: 0.3s ease;
     color: $color-yellow;
     text-decoration: none;
+    opacity: 0.5;
     text-shadow: $box-shadow-yellow;
   }
   &:visited {
