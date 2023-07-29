@@ -27,6 +27,7 @@
   transition: 0.3s ease;
   color: #F8E71C;
   text-decoration: none;
+  text-shadow: 0 0 4rem #F8E71C20;
 }
 .text-system-linked:visited {
   color: #F8E71C;
