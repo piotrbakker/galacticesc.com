@@ -118,6 +118,27 @@ html, body {
   z-index: 1;
 }
 
+// Controls
+.button-type-oval {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+.button-style-primary {
+  background-color: $grayscale-90;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.button-content-icon {
+  font-size: 1.5rem;
+  color: $hue-yellow;
+}
+
 // Content
 .content-screenshot {
   box-shadow: $box-shadow-gray-2;
@@ -139,16 +160,9 @@ html, body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 #modal-window-close {
-  color: $hue-yellow;
   position: absolute;
   top: 1rem;
   right: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-  }
 }
 #modal-window-content {
   margin: auto;

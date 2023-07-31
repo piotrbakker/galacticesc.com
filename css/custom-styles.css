@@ -92,6 +92,28 @@ html, body {
   z-index: 1;
 }
 
+.button-type-oval {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+
+.button-style-primary {
+  background-color: #222222;
+}
+.button-style-primary:hover {
+  opacity: 0.8;
+}
+
+.button-content-icon {
+  font-size: 1.5rem;
+  color: #F8E71C;
+}
+
 .content-screenshot {
   box-shadow: 0 0 4rem #00000050;
 }
@@ -112,16 +134,9 @@ html, body {
 }
 
 #modal-window-close {
-  color: #F8E71C;
   position: absolute;
   top: 1rem;
   right: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-#modal-window-close:hover {
-  opacity: 0.8;
 }
 
 #modal-window-content {
